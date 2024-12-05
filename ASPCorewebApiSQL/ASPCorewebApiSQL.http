@@ -1,0 +1,6 @@
+@ASPCorewebApiSQL_HostAddress = http://localhost:5170
+
+GET {{ASPCorewebApiSQL_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
