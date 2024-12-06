@@ -18,6 +18,7 @@ namespace ASPCorewebApiSQL.Controllers
         [HttpGet]
         public async Task<ActionResult<List<Student>>> GetStudent()
         {
+            //Somethng here
             var data = await contex.Students.ToListAsync();
             return Ok(data);
             //ok is cntrollr base class method and gives status code of our response
