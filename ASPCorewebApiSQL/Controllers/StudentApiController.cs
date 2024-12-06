@@ -37,7 +37,7 @@ namespace ASPCorewebApiSQL.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> CreateStudent(Student std)
+        public async Task<ActionResult<Student>> CreateStudent(Student std)
         {
             await contex.Students.AddAsync(std);
             await contex.SaveChangesAsync();
